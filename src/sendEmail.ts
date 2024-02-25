@@ -1,8 +1,8 @@
 import joplin from 'api';
 const nodemailer = require("nodemailer");
 const translations = require("./res/lang/translation.json");
-import { currentGlobal } from './index';
-import { convertToHTML } from './style_extension';
+import { convertToHTML } from './markdownToHtml';
+import { currentGlobal } from './translation';
 
 // 将html中的src地址设置为nodemailer支持发松的格式
 function htmlOfImageUrl(html) {
